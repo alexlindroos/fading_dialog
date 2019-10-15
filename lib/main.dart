@@ -43,16 +43,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   animationDuration: Duration(milliseconds: 2500),
                 )
               : Container(),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Center(
-                child: RaisedButton(
-                  child: Text("Show fading dialog"),
-                  onPressed: () => setState(() => _visible = !_visible),
-                ),
-              ),
-            ],
+          Center(
+            child: RaisedButton(
+              child: Text("Show fading dialog"),
+              onPressed: () => setState(() => _visible = !_visible),
+            ),
           ),
         ],
       ),
